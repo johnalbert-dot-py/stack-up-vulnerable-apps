@@ -26,12 +26,17 @@
       <input type="submit" value="Submit" />
     </form>
 
+    <iframe src="#" frameborder="0">
+      <p>Your browser does not support iframes.</p>
+    </iframe>
+
     <script>
       const urlParams = new URLSearchParams(window.location.search);
       const name = urlParams.get("name");
       if (name) {
         document.write(`<h2>Hello, ${name}!</h2>`);
       }
+      console.log("Test");
     </script>
   </body>
 </html>
