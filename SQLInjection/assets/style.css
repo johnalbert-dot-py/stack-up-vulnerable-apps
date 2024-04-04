@@ -1,0 +1,179 @@
+/* no bootstrap hahahah weak lang daw po nag gaganon */
+
+* {
+  box-sizing: border-box;
+  font-size: 100%;
+}
+
+body,
+html {
+  margin: 0;
+  padding: 0;
+  font-family: "Inter", sans-serif;
+  background-color: #f0f0f0;
+}
+
+main {
+  display: grid;
+  place-items: center;
+  height: 100vh;
+  width: 100%;
+  padding-inline: 30px;
+}
+
+section#message-app {
+  width: 70%;
+  height: 70vh;
+  display: grid;
+  /* 2 column grid */
+  grid-template-columns: 0.4fr 1fr;
+  /* padding: 20px; */
+  border-radius: 5px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  background-color: #fff;
+}
+
+aside {
+  padding: 20px;
+  background-color: #0d0b1c;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  color: #fff;
+  height: auto;
+  overflow-x: auto;
+}
+
+section#convos {
+  background-color: #fff;
+  width: 100%;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+div.search-container {
+  width: 100%;
+  margin-top: 16px;
+}
+
+input {
+  color: #fff;
+  width: 100%;
+  padding-block: 0.5rem;
+  padding-inline: 0.8rem;
+  font-size: 1rem;
+  border-radius: 5px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  background-color: rgba(255, 255, 255, 0.01);
+}
+
+input:focus {
+  outline: 3px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 0 1px rgba(255, 255, 255, 1);
+}
+
+div.students {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: start;
+  align-items: start;
+  max-height: 50vh;
+  width: 100%;
+}
+
+div.students div {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  padding: 10px;
+  padding-block: 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  border: 1px solid rgba(0, 0, 0, 0);
+  width: 100%;
+}
+
+div.students div:hover {
+  background-color: #181235;
+  border-radius: 5px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+section#convos {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+input.message-input {
+  color: #000;
+  width: 100%;
+  padding-block: 0.5rem;
+  padding-inline: 0.8rem;
+  font-size: 1rem;
+  border-radius: 5px;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+}
+
+input.message-input:focus {
+  outline: 3px solid rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 1);
+}
+
+button.send-btn {
+  padding: 16px;
+  background-color: #0d0b1c;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: ease-in 0.2s;
+}
+
+select {
+  padding: 16px;
+  background-color: #0d0b1c;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: ease-in 0.2s;
+  border-right: 16px solid transparent;
+}
+
+div.convo-history {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+div.convo-history div {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+div.convo-history div span:not(.convo-with, .sender) {
+  padding: 10px;
+  border-radius: 5px;
+  background-color: #181235;
+  color: #fff;
+  width: fit-content;
+}
+
+div.convo-history .left span {
+  align-self: flex-start;
+  padding: 10px !important;
+  border-radius: 5px !important;
+  color: #fff;
+  width: fit-content;
+  background-color: #247852 !important;
+}
+
+div.convo-history .right {
+  align-self: flex-end;
+}
+
+button:hover {
+  background-color: #181235;
+}
